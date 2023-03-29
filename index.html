@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="style.css">
 
     <title>formulario</title>
@@ -17,7 +18,8 @@
             <h1>CADASTRO</h1>
             <form>
                 <label for="name">Nome:</label>
-                <input type="text" id="name" placeholder="Nome">
+                <input type="text" id="name" placeholder="Nome" class="textField"> 
+
                 <label for="colorpicker">Cor favorita:</label>
                 <input type="color" id="colorpicker">
 
@@ -27,7 +29,9 @@
                 <input type="time" id="hrnascimento">
 
                 <label for="email">E-mail:</label>
-                <input type="email" id="email" placeholder="zeboco@algumacoisa.com">
+                <input type="email" id="email" placeholder="zeboco@algumacoisa.com" class="textField">
+                <label for="confemail">confirme o email</label>
+                <input type="email" id="confemail" placeholder="zeboco@algumacoisa.com" class="textField">
 
                 <label for="doc">Faça upload do documento</label>
                 <input type="file" id="doc" accept=".pdf">
@@ -38,12 +42,12 @@
                 <input type="image">
 
                 <label for="telefone">Telefone</label>
-                <input type="number" id="telefone" placeholder="(11)89228922">
+                <input type="number" id="telefone" placeholder="(11)89228922" class="textField">
 
                 <label for="pass">Senha:</label>
-                <input type="password" id="pass">
+                <input type="password" id="pass" placeholder=".........." class="textField">
                 <label for="confpass">Confirme a senha</label>
-                <input type="password" id="confpass">
+                <input type="password" id="confpass" placeholder=".........."  class="textField">
 
                 <label for="sexo">Sexo:</label>
 
@@ -64,8 +68,8 @@
                 <input type="checkbox" id="agree" value="y">
                 <label for="agree">Concordo com as políticas</label>
 
-                <input type="reset" value="Limpar">
-                <button>Enviar</button>
+                <input type="reset" value="Limpar" class="whiteButton">
+                <button class="whiteButton" type="button">Enviar</button>
             </form>
         </div>
     </div>
